@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="VoxelEditorConfig" format=3 uid="uid://c4a5tnwidcohc"]
+
+[ext_resource type="Script" uid="uid://cx8dilygqiayv" path="res://src/core/voxel.gd" id="1_fiede"]
+[ext_resource type="Script" uid="uid://yoy3fpom1iyq" path="res://src/editor/config.gd" id="2_3poc0"]
+
+[resource]
+script = ExtResource("2_3poc0")
+metadata/_custom_type_script = "uid://yoy3fpom1iyq"

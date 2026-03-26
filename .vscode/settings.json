@@ -1,0 +1,8 @@
+{
+    "godotTools.editorPath.godot4": "/home/marcosdima/Desktop/Projects/godot/test-cube/project.godot",
+    "files.exclude": {
+        "**/*.uid": true,
+        "**/*.import": true,
+        "**/.godot": true
+    }
+}
