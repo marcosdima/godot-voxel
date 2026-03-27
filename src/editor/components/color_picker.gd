@@ -43,6 +43,11 @@ func _gui_input(event: InputEvent) -> void:
 		color = _last_color
 	elif event.is_action_released(ACTION_STRINGS[Action.COPY]):
 		set_last_color(color)
+	else:
+		return # Not an action we care about, ignore.
+
+	# Emit the color_changed signal after updating the color.
+	color_changed.emit(color)
 
 
 func _darken_color(c: Color) -> Color:

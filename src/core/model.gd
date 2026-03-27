@@ -2,8 +2,17 @@ extends Resource
 class_name VoxelModel
 ## Represents a voxel model composed of editable voxel entries.
 
+
+## The width and height of each layer in the voxel model. Each layer is a 2D grid of voxels.
+@export_group("Dimensions")
+@export var width: int = 5
+@export var height: int = 5
+
+## Number of layers in the voxel model. Each layer is a 2D grid of voxels.
+@export var layers: int = 1
+
 ## Editable list of voxel entries used for authoring.
-@export var entries: Array[VoxelEntry]
+@export var cells: Array[VoxelEntry] = []
 
 ## Cached mesh generated from voxel data.
 var _mesh: ArrayMesh
@@ -21,7 +30,7 @@ func get_mesh() -> ArrayMesh:
 func _to_dict() -> Dictionary:
 	var d := {}
 
-	for e in entries:
+	for e in cells:
 		# Check for duplicate positions to avoid overwriting colors.
 		if d.has(e.pos):
 			push_warning("Duplicate voxel at position %s." % [e.pos])

@@ -1,19 +1,20 @@
 [gd_scene format=3 uid="uid://dgqotmxykhdn8"]
 
 [ext_resource type="Script" uid="uid://8ja6ooo42muv" path="res://src/editor/editor.gd" id="1_2qsb6"]
-[ext_resource type="Resource" uid="uid://c4a5tnwidcohc" path="res://src/editor/saves/test.tres" id="2_1qij7"]
+[ext_resource type="Resource" uid="uid://cxkysassi4w43" path="res://tests/apple/apple.tres" id="2_8bp7q"]
 [ext_resource type="Script" uid="uid://habkusgi3k0e" path="res://src/editor/components/layer_picker.gd" id="3_8bp7q"]
 
-[node name="Editor" type="VBoxContainer" unique_id=223647604 node_paths=PackedStringArray("grid", "current_layer")]
+[node name="Editor" type="VBoxContainer" unique_id=223647604 node_paths=PackedStringArray("grid", "current_layer", "save_button")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2qsb6")
-data = ExtResource("2_1qij7")
+model = ExtResource("2_8bp7q")
 grid = NodePath("MainMargin/VBoxContainer/Grid")
 current_layer = NodePath("MainMargin/VBoxContainer/ButtonsMargin/Buttons/LayerPicker")
+save_button = NodePath("MainMargin/VBoxContainer/ButtonsMargin/Buttons/Save")
 
 [node name="MainMargin" type="MarginContainer" parent="." unique_id=1530965352]
 layout_mode = 2
@@ -33,14 +34,17 @@ size_flags_vertical = 3
 [node name="Buttons" type="HBoxContainer" parent="MainMargin/VBoxContainer/ButtonsMargin" unique_id=2001366906]
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_constants/separation = 20
 
 [node name="LayerPicker" type="SpinBox" parent="MainMargin/VBoxContainer/ButtonsMargin/Buttons" unique_id=92229823]
 layout_mode = 2
-min_value = 1.0
 max_value = 99.0
-value = 1.0
 script = ExtResource("3_8bp7q")
 metadata/_custom_type_script = "uid://habkusgi3k0e"
+
+[node name="Save" type="Button" parent="MainMargin/VBoxContainer/ButtonsMargin/Buttons" unique_id=2028451076]
+layout_mode = 2
+text = "Save"
 
 [node name="Grid" type="GridContainer" parent="MainMargin/VBoxContainer" unique_id=1855864667]
 layout_mode = 2
