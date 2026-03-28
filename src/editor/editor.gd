@@ -17,12 +17,17 @@ var cells: VoxelCells
 
 var layer_cells: int:
 	get():
+		if model == null:
+			return 0
 		if cells != null:
-			return cells.layer_cells_count()
+			return cells.layer_cells_count
 		return model.width * model.height
 
 
 func _ready() -> void:
+	if not _validate_required_references():
+		return
+
 	# Configure layer picker.
 	current_layer.min_value = 0
 	current_layer.max_value = model.layers - 1
@@ -34,7 +39,7 @@ func _ready() -> void:
 	current_layer.value_changed.connect(_update_layer_cells)
 
 	cells = VoxelCells.new(model)
-	cells.ensure_initialized()
+	cells.ensure_layer_initialized(int(current_layer.value))
 
 	# Set up save button.
 	save_button.pressed.connect(_on_save_pressed)
@@ -44,11 +49,29 @@ func _ready() -> void:
 		paste_button.pressed.connect(_on_paste_pressed)
 
 	_build_grid()
+
+
+func _validate_required_references() -> bool:
+	if model == null:
+		push_error("VoxelEditor requires 'model' to be assigned.")
+		return false
+	if grid == null:
+		push_error("VoxelEditor requires 'grid' to be assigned.")
+		return false
+	if current_layer == null:
+		push_error("VoxelEditor requires 'current_layer' to be assigned.")
+		return false
+	if save_button == null:
+		push_error("VoxelEditor requires 'save_button' to be assigned.")
+		return false
+
+	return true
 		
 
 func _build_grid() -> void:
 	# Set grid columns to match the width of the voxel editor configuration.
 	grid.columns = model.width
+	cells.ensure_layer_initialized(int(current_layer.value))
 
 	# Create color picker buttons for the current layer.
 	for i in range(layer_cells):
@@ -65,6 +88,8 @@ func _build_grid() -> void:
 
 
 func _update_layer_cells(_layer: int) -> void:
+	cells.ensure_layer_initialized(int(current_layer.value))
+
 	for i in range(layer_cells):
 		var btn = grid.get_child(i) as CustomColorPicker
 		btn.color = cells.get_color(int(current_layer.value), i)
@@ -72,6 +97,7 @@ func _update_layer_cells(_layer: int) -> void:
 
 func _on_copy_pressed() -> void:
 	if cells == null:
+		push_error("VoxelEditor cells helper is not initialized.")
 		return
 
 	cells.copy_layer(int(current_layer.value))
@@ -80,6 +106,7 @@ func _on_copy_pressed() -> void:
 
 func _on_paste_pressed() -> void:
 	if cells == null:
+		push_error("VoxelEditor cells helper is not initialized.")
 		return
 
 	if not cells.paste_to_layer(int(current_layer.value)):
@@ -96,8 +123,12 @@ func _get_configuration_warnings() -> PackedStringArray:
 
 	if model == null:
 		warnings.append("VoxelEditorConfig must be assigned to 'model'.")
+	if grid == null:
+		warnings.append("Grid must be assigned to 'grid'.")
 	if current_layer == null:
 		warnings.append("Layer picker must be assigned to 'current_layer'.")
+	if save_button == null:
+		warnings.append("Save button must be assigned to 'save_button'.")
 	if copy_button == null:
 		warnings.append("Copy button must be assigned to 'copy_button'.")
 	if paste_button == null:
