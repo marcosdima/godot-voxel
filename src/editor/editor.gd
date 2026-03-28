@@ -3,24 +3,40 @@ class_name VoxelEditor
 ## VoxelModel editor for Godot. Provides a UI for editing voxel models in the editor.
 
 
+## Voxel model resource edited through this UI.
 @export var model: VoxelModel
+
 @export_group("UI Elements")
+
+## Grid container used to display cell buttons.
 @export var grid: GridContainer
+
+## Layer picker used to select the active layer.
 @export var current_layer: LayerPicker
+
+## Save button that writes model data to disk.
 @export var save_button: Button
+
+## Copy button that stores the currently selected layer.
 @export var copy_button: Button
+
+## Paste button that applies copied data into the current layer.
 @export var paste_button: Button
 
 
+## Core helper that manages layer and cell operations.
 var cells: VoxelCells
 
 
+## Number of editable cells for one layer.
 var layer_cells: int:
 	get():
 		if model == null:
 			return 0
+
 		if cells != null:
 			return cells.layer_cells_count
+
 		return model.width * model.height
 
 
@@ -45,29 +61,35 @@ func _ready() -> void:
 	save_button.pressed.connect(_on_save_pressed)
 	if copy_button != null:
 		copy_button.pressed.connect(_on_copy_pressed)
+
 	if paste_button != null:
 		paste_button.pressed.connect(_on_paste_pressed)
 
 	_build_grid()
 
 
+## Validates required references before the editor is initialized.
 func _validate_required_references() -> bool:
 	if model == null:
 		push_error("VoxelEditor requires 'model' to be assigned.")
 		return false
+
 	if grid == null:
 		push_error("VoxelEditor requires 'grid' to be assigned.")
 		return false
+
 	if current_layer == null:
 		push_error("VoxelEditor requires 'current_layer' to be assigned.")
 		return false
+
 	if save_button == null:
 		push_error("VoxelEditor requires 'save_button' to be assigned.")
 		return false
 
 	return true
-		
 
+
+## Builds the visual grid for the active layer.
 func _build_grid() -> void:
 	# Set grid columns to match the width of the voxel editor configuration.
 	grid.columns = model.width
@@ -87,6 +109,7 @@ func _build_grid() -> void:
 		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 
 
+## Updates button colors when layer selection changes.
 func _update_layer_cells(_layer: int) -> void:
 	cells.ensure_layer_initialized(int(current_layer.value))
 
@@ -95,6 +118,7 @@ func _update_layer_cells(_layer: int) -> void:
 		btn.color = cells.get_color(int(current_layer.value), i)
 
 
+## Copies the currently selected layer.
 func _on_copy_pressed() -> void:
 	if cells == null:
 		push_error("VoxelEditor cells helper is not initialized.")
@@ -104,6 +128,7 @@ func _on_copy_pressed() -> void:
 	print("Layer %d copied" % cells.copied_layer_index())
 
 
+## Pastes the copied layer into the currently selected layer.
 func _on_paste_pressed() -> void:
 	if cells == null:
 		push_error("VoxelEditor cells helper is not initialized.")
@@ -123,20 +148,26 @@ func _get_configuration_warnings() -> PackedStringArray:
 
 	if model == null:
 		warnings.append("VoxelEditorConfig must be assigned to 'model'.")
+
 	if grid == null:
 		warnings.append("Grid must be assigned to 'grid'.")
+
 	if current_layer == null:
 		warnings.append("Layer picker must be assigned to 'current_layer'.")
+
 	if save_button == null:
 		warnings.append("Save button must be assigned to 'save_button'.")
+
 	if copy_button == null:
 		warnings.append("Copy button must be assigned to 'copy_button'.")
+
 	if paste_button == null:
 		warnings.append("Paste button must be assigned to 'paste_button'.")
 
 	return warnings
 
 
+## Saves the model resource to its current path.
 func _on_save_pressed() -> void:
 	var save_path := model.resource_path
 	var err := ResourceSaver.save(model, save_path)
