@@ -3,12 +3,13 @@ class_name VoxelModel
 ## Represents a voxel model composed of editable voxel entries.
 
 
-## The width and height of each layer in the voxel model. Each layer is a 2D grid of voxels.
-@export_group("Dimensions")
+## The width of each layer in the voxel model.
 @export var width: int = 5
+
+## The height of each layer in the voxel model.
 @export var height: int = 5
 
-## Number of layers in the voxel model. Each layer is a 2D grid of voxels.
+## Number of layers in the voxel model.
 @export var layers: int = 1
 
 ## Editable list of voxel entries used for authoring.
