@@ -44,27 +44,28 @@ func ensure_layer_initialized(layer_index: int) -> bool:
 
 		# Initialize missing cells with deterministic position and default color.
 		var entry := VoxelEntry.new()
+		var row := floori(float(i) / _model.width)
 		entry.pos = Vector3i(
 			i % _model.width,
-			floori(float(i) / _model.width),
+			_model.height - 1 - row,
 			layer_index,
 		)
-		entry.color = Color.WHITE
+		entry.color = Color(0, 0, 0, 0)
 		_model.cells[index] = entry
 
 	return true
 
 
-## Returns the color for a layer cell, or white when invalid/unavailable.
+## Returns the color for a layer cell, or transparent when invalid/unavailable.
 func get_color(layer_index: int, i: int) -> Color:
 	if not _ensure_valid_cell(layer_index, i):
-		return Color.WHITE
+		return Color(0, 0, 0, 0)
 
 	var index := layer_index * layer_cells_count + i
 	if _model.cells[index] != null:
 		return _model.cells[index].color
 		
-	return Color.WHITE
+	return Color(0, 0, 0, 0)
 
 
 ## Sets the color for one layer cell.

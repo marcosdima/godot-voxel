@@ -28,14 +28,32 @@ func get_mesh() -> ArrayMesh:
 
 ## Converts voxel entries into a dictionary for fast lookup.
 func _to_dict() -> Dictionary[Vector3i, Color]:
-	var d: Dictionary[Vector3i, Color] = {} 
+	var d: Dictionary[Vector3i, Color] = {}
+	var layer_cell_count := width * height
 
-	for e in cells:
+	for index in range(cells.size()):
+		var e := cells[index]
+		if e == null:
+			continue
+
+		# Transparent voxels are treated as empty cells.
+		if e.color.a <= 0.0:
+			continue
+
+		var layer_index := floori(float(index) / layer_cell_count)
+		var cell_offset := index % layer_cell_count
+		var row := floori(float(cell_offset) / width)
+		var pos := Vector3i(
+			cell_offset % width,
+			height - 1 - row,
+			layer_index,
+		)
+
 		# Check for duplicate positions to avoid overwriting colors.
-		if d.has(e.pos):
-			push_warning("Duplicate voxel at position %s." % [e.pos])
+		if d.has(pos):
+			push_warning("Duplicate voxel at position %s." % [pos])
 
-		d[e.pos] = e.color
+		d[pos] = e.color
 
 	return d
 
