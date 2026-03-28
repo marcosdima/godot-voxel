@@ -5,4 +5,5 @@ class_name VoxelEntry
 ## Grid position of the voxel in integer coordinates.
 @export var pos: Vector3i
 ## Display color assigned to this voxel.
-@export var color: Color
+## Default is transparent (empty/unset voxel).
+@export var color: Color = Color(0, 0, 0, 0)
