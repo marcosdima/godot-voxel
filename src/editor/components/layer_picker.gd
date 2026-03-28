@@ -4,6 +4,9 @@ class_name LayerPicker
 
 
 func _ready():
+	# Layer picker uses zero-based layer indexes.
 	value = 0
-	min_value = 0 # Zero-based layer index.
-	max_value = 99 # Arbitrary limit, can be adjusted as needed.
+	min_value = 0
+
+	# Keep an editor-friendly upper bound.
+	max_value = 99

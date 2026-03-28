@@ -1,9 +1,11 @@
 extends ColorPickerButton
 class_name CustomColorPicker
 
+## Increment used for lighten/darken actions.
 const CHANGE_MAGNITUDE := 0.1
 
-# TODO: Move Action enum to a separate file. 
+# TODO: Move Action enum to a separate file.
+## Keyboard actions supported by the picker.
 enum Action {
 	DARKER = 0,
 	LIGHTER = 1,
@@ -11,6 +13,7 @@ enum Action {
 	COPY = 3,
 }
 
+## Maps each action enum to the corresponding input action name.
 const ACTION_STRINGS := {
 	Action.DARKER: "darker",
 	Action.LIGHTER: "lighter",
@@ -18,6 +21,7 @@ const ACTION_STRINGS := {
 	Action.COPY: "copy",
 }
 
+## Shared clipboard-like color for quick reuse.
 static var _last_color := Color.WHITE
 
 
@@ -44,20 +48,24 @@ func _gui_input(event: InputEvent) -> void:
 	elif event.is_action_released(ACTION_STRINGS[Action.COPY]):
 		set_last_color(color)
 	else:
-		return # Not an action we care about, ignore.
+		# Ignore unrelated input actions.
+		return
 
 	# Emit the color_changed signal after updating the color.
 	color_changed.emit(color)
 
 
+## Returns a darker variant of the given color.
 func _darken_color(c: Color) -> Color:
 	return c.darkened(CHANGE_MAGNITUDE)
 
 
+## Returns a lighter variant of the given color.
 func _lighten_color(c: Color) -> Color:
 	return c.lightened(CHANGE_MAGNITUDE)
 
 
+## Stores the last selected color for reuse actions.
 func set_last_color(c: Color) -> void:
 	if _last_color != c:
 		_last_color = c
