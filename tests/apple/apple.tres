@@ -1,491 +1,766 @@
-[gd_resource type="Resource" script_class="VoxelModel" format=3 uid="uid://c6dnh5xa7pfup"]
+[gd_resource type="Resource" script_class="VoxelModel" format=3]
 
-[ext_resource type="Script" uid="uid://cx8dilygqiayv" path="res://src/core/voxel.gd" id="1_u82lp"]
-[ext_resource type="Script" uid="uid://cn1q7283gtg1i" path="res://src/core/model.gd" id="2_u82lp"]
+[ext_resource type="Script" path="res://src/core/voxel.gd" id="1_u82lp"]
+[ext_resource type="Script" path="res://src/core/model.gd" id="2_u82lp"]
 
 [sub_resource type="Resource" id="Resource_u82lp"]
 script = ExtResource("1_u82lp")
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 6, 0)
 
 [sub_resource type="Resource" id="Resource_84iw2"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 0, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 6, 0)
 
 [sub_resource type="Resource" id="Resource_oac3y"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 0, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 6, 0)
 
 [sub_resource type="Resource" id="Resource_dx2u0"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 0, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 6, 0)
 
 [sub_resource type="Resource" id="Resource_uxv81"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 1, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 6, 0)
 
 [sub_resource type="Resource" id="Resource_wdwxm"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 1, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 5, 0)
 
 [sub_resource type="Resource" id="Resource_etqve"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 1, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 5, 0)
 
 [sub_resource type="Resource" id="Resource_ftp57"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 1, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 5, 0)
 
 [sub_resource type="Resource" id="Resource_1blew"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 2, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 5, 0)
 
 [sub_resource type="Resource" id="Resource_qy0i3"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 2, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 5, 0)
 
 [sub_resource type="Resource" id="Resource_kl48v"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 2, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 4, 0)
 
 [sub_resource type="Resource" id="Resource_sn7qi"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 2, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 4, 0)
 
 [sub_resource type="Resource" id="Resource_t37xc"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 3, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 4, 0)
 
 [sub_resource type="Resource" id="Resource_thkhp"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 4, 0)
+
+[sub_resource type="Resource" id="Resource_ncu7x"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 4, 0)
+
+[sub_resource type="Resource" id="Resource_18sbb"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 3, 0)
+
+[sub_resource type="Resource" id="Resource_3mqs0"]
 script = ExtResource("1_u82lp")
 pos = Vector3i(1, 3, 0)
 color = Color(1, 0, 0, 1)
 
-[sub_resource type="Resource" id="Resource_ncu7x"]
+[sub_resource type="Resource" id="Resource_64nv1"]
 script = ExtResource("1_u82lp")
 pos = Vector3i(2, 3, 0)
 color = Color(1, 0, 0, 1)
 
-[sub_resource type="Resource" id="Resource_18sbb"]
-script = ExtResource("1_u82lp")
-pos = Vector3i(3, 3, 0)
-color = Color(1, 1, 1, 1)
-
-[sub_resource type="Resource" id="Resource_3mqs0"]
-script = ExtResource("1_u82lp")
-pos = Vector3i(0, 4, 0)
-color = Color(1, 1, 1, 1)
-
-[sub_resource type="Resource" id="Resource_64nv1"]
-script = ExtResource("1_u82lp")
-pos = Vector3i(1, 4, 0)
-color = Color(1, 0, 0, 1)
-
 [sub_resource type="Resource" id="Resource_wftdi"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 4, 0)
+pos = Vector3i(3, 3, 0)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_5bpla"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 4, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 3, 0)
 
 [sub_resource type="Resource" id="Resource_hjct8"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 5, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 2, 0)
 
 [sub_resource type="Resource" id="Resource_m1reg"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 5, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 2, 0)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_1oox0"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 5, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 2, 0)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_0sabw"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 5, 0)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 2, 0)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_clx40"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 0, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 2, 0)
 
 [sub_resource type="Resource" id="Resource_t85ri"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 0, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 1, 0)
 
 [sub_resource type="Resource" id="Resource_v88wp"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 0, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 1, 0)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_gaavi"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 0, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 1, 0)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_r5rsg"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 1, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 1, 0)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_l6s1k"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 1, 1)
-color = Color(0.089645386, 0.48828125, 0.1052171, 1)
+pos = Vector3i(4, 1, 0)
 
 [sub_resource type="Resource" id="Resource_mrtkv"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 1, 1)
-color = Color(1, 1, 1, 1)
 
 [sub_resource type="Resource" id="Resource_1s6ft"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 1, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 0, 0)
 
 [sub_resource type="Resource" id="Resource_dgerf"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 2, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 0, 0)
 
 [sub_resource type="Resource" id="Resource_0j22w"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 2, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(3, 0, 0)
 
 [sub_resource type="Resource" id="Resource_ai7ve"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 2, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(4, 0, 0)
 
 [sub_resource type="Resource" id="Resource_rm4t7"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 2, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 6, 1)
 
 [sub_resource type="Resource" id="Resource_tkn7t"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 3, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(1, 6, 1)
 
 [sub_resource type="Resource" id="Resource_mfq7h"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 3, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 6, 1)
 
 [sub_resource type="Resource" id="Resource_6l65s"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 3, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 6, 1)
 
 [sub_resource type="Resource" id="Resource_86au4"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 3, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(4, 6, 1)
 
 [sub_resource type="Resource" id="Resource_cvvr4"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 4, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(0, 5, 1)
 
 [sub_resource type="Resource" id="Resource_spnb5"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 4, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 5, 1)
 
 [sub_resource type="Resource" id="Resource_jj8fy"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 4, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 5, 1)
 
 [sub_resource type="Resource" id="Resource_1w5hq"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 4, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(3, 5, 1)
 
 [sub_resource type="Resource" id="Resource_k13pb"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 5, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 5, 1)
 
 [sub_resource type="Resource" id="Resource_6ujad"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 5, 1)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(0, 4, 1)
 
 [sub_resource type="Resource" id="Resource_22jkj"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 5, 1)
+pos = Vector3i(1, 4, 1)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_eba2i"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 5, 1)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 4, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_skw8n"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 0, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 4, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_wye48"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 0, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 4, 1)
 
 [sub_resource type="Resource" id="Resource_b2k0c"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 0, 2)
-color = Color(0.089645386, 0.48828125, 0.1052171, 1)
+pos = Vector3i(0, 3, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_uclo0"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 0, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 3, 1)
 
 [sub_resource type="Resource" id="Resource_24dan"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 1, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 3, 1)
 
 [sub_resource type="Resource" id="Resource_qpgey"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 1, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 3, 1)
 
 [sub_resource type="Resource" id="Resource_ebs4j"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 1, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 3, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_kf1xw"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 1, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 2, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_3b584"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 2, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 2, 1)
 
 [sub_resource type="Resource" id="Resource_v8qjc"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 2, 2)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(2, 2, 1)
 
 [sub_resource type="Resource" id="Resource_05uku"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 2, 2)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(3, 2, 1)
 
 [sub_resource type="Resource" id="Resource_1wvmd"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 2, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 2, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_edcgm"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 3, 2)
+pos = Vector3i(0, 1, 1)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_dd8gg"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 3, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 1, 1)
 
 [sub_resource type="Resource" id="Resource_gfjpp"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 3, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 1, 1)
 
 [sub_resource type="Resource" id="Resource_6ba0k"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 3, 2)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(3, 1, 1)
 
 [sub_resource type="Resource" id="Resource_k8n3p"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 4, 2)
+pos = Vector3i(4, 1, 1)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_sqyna"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 4, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_aaqhq"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 4, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 0, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_v4qu8"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 4, 2)
+pos = Vector3i(2, 0, 1)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_pu6qu"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 5, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 0, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_x1vxc"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 5, 2)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(4, 0, 1)
 
 [sub_resource type="Resource" id="Resource_htntw"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 5, 2)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(0, 6, 2)
 
 [sub_resource type="Resource" id="Resource_5qpb5"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 5, 2)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 6, 2)
 
 [sub_resource type="Resource" id="Resource_toj6l"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 0, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 6, 2)
+color = Color(0.36862746, 0.5019608, 0.019607844, 1)
 
 [sub_resource type="Resource" id="Resource_ia00o"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 0, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 6, 2)
+color = Color(0.36862746, 0.5019608, 0.019607844, 1)
 
 [sub_resource type="Resource" id="Resource_wghq6"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 0, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 6, 2)
 
 [sub_resource type="Resource" id="Resource_fhtup"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 0, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 5, 2)
 
 [sub_resource type="Resource" id="Resource_wv78n"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 1, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 5, 2)
 
 [sub_resource type="Resource" id="Resource_q5log"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 1, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 5, 2)
+color = Color(0.36862746, 0.5019608, 0.019607844, 1)
 
 [sub_resource type="Resource" id="Resource_ww7ge"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 1, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 5, 2)
 
 [sub_resource type="Resource" id="Resource_brwo1"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 1, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 5, 2)
 
 [sub_resource type="Resource" id="Resource_2luj3"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 2, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(0, 4, 2)
 
 [sub_resource type="Resource" id="Resource_63sdt"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 2, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 4, 2)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_diy7r"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 2, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 4, 2)
 
 [sub_resource type="Resource" id="Resource_1fmfj"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 2, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 4, 2)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_gmeqb"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 3, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 4, 2)
 
 [sub_resource type="Resource" id="Resource_lb1of"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 3, 3)
+pos = Vector3i(0, 3, 2)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_7qn8n"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 3, 3)
-color = Color(1, 0, 0, 1)
+pos = Vector3i(1, 3, 2)
 
 [sub_resource type="Resource" id="Resource_b3tpc"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 3, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 3, 2)
 
 [sub_resource type="Resource" id="Resource_ntatt"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 4, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 3, 2)
 
 [sub_resource type="Resource" id="Resource_rc06t"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 4, 3)
+pos = Vector3i(4, 3, 2)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_bsknk"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 4, 3)
+pos = Vector3i(0, 2, 2)
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_tk143"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(3, 4, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(1, 2, 2)
 
 [sub_resource type="Resource" id="Resource_mdjqt"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(0, 5, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(2, 2, 2)
 
 [sub_resource type="Resource" id="Resource_cdnic"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(1, 5, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(3, 2, 2)
 
 [sub_resource type="Resource" id="Resource_piu4e"]
 script = ExtResource("1_u82lp")
-pos = Vector3i(2, 5, 3)
-color = Color(1, 1, 1, 1)
+pos = Vector3i(4, 2, 2)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_r6yqv"]
 script = ExtResource("1_u82lp")
+pos = Vector3i(0, 1, 2)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_12gk5"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 1, 2)
+
+[sub_resource type="Resource" id="Resource_l035q"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 1, 2)
+
+[sub_resource type="Resource" id="Resource_2wcav"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 1, 2)
+
+[sub_resource type="Resource" id="Resource_eh401"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 1, 2)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_4aml3"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 0, 2)
+
+[sub_resource type="Resource" id="Resource_ri1ua"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 0, 2)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_edy8x"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 0, 2)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_k7h7y"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 0, 2)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_irgvr"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 0, 2)
+
+[sub_resource type="Resource" id="Resource_c6s2u"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 6, 3)
+
+[sub_resource type="Resource" id="Resource_y4rmv"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 6, 3)
+
+[sub_resource type="Resource" id="Resource_hejjq"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 6, 3)
+
+[sub_resource type="Resource" id="Resource_sgvdo"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 6, 3)
+
+[sub_resource type="Resource" id="Resource_dmd8h"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 6, 3)
+
+[sub_resource type="Resource" id="Resource_jjgq4"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 5, 3)
+
+[sub_resource type="Resource" id="Resource_wjllk"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 5, 3)
+
+[sub_resource type="Resource" id="Resource_mpkkw"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 5, 3)
+
+[sub_resource type="Resource" id="Resource_tsfci"]
+script = ExtResource("1_u82lp")
 pos = Vector3i(3, 5, 3)
-color = Color(1, 1, 1, 1)
+
+[sub_resource type="Resource" id="Resource_d8dmt"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 5, 3)
+
+[sub_resource type="Resource" id="Resource_jyx6x"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 4, 3)
+
+[sub_resource type="Resource" id="Resource_o22c3"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 4, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_d4pe5"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 4, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_drjfg"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 4, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_hb28b"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 4, 3)
+
+[sub_resource type="Resource" id="Resource_726ss"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 3, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_60wrd"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 3, 3)
+
+[sub_resource type="Resource" id="Resource_bto4r"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 3, 3)
+
+[sub_resource type="Resource" id="Resource_omehb"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 3, 3)
+
+[sub_resource type="Resource" id="Resource_0y7n2"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 3, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_hufct"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 2, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_6g36d"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 2, 3)
+
+[sub_resource type="Resource" id="Resource_oedor"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 2, 3)
+
+[sub_resource type="Resource" id="Resource_j3uqy"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 2, 3)
+
+[sub_resource type="Resource" id="Resource_ujlnp"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 2, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_4c6ft"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 1, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_ogl46"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 1, 3)
+
+[sub_resource type="Resource" id="Resource_lkjid"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 1, 3)
+
+[sub_resource type="Resource" id="Resource_kj1lh"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 1, 3)
+
+[sub_resource type="Resource" id="Resource_uhgqk"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 1, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_hl6t3"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 0, 3)
+
+[sub_resource type="Resource" id="Resource_qymnk"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 0, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_15avo"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 0, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_efcuk"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 0, 3)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_l4q6g"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 0, 3)
+
+[sub_resource type="Resource" id="Resource_7r0h6"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 6, 4)
+
+[sub_resource type="Resource" id="Resource_vxskb"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 6, 4)
+
+[sub_resource type="Resource" id="Resource_wc6j8"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 6, 4)
+
+[sub_resource type="Resource" id="Resource_oy5ls"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 6, 4)
+
+[sub_resource type="Resource" id="Resource_1iifp"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 6, 4)
+
+[sub_resource type="Resource" id="Resource_b6fjh"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 5, 4)
+
+[sub_resource type="Resource" id="Resource_uwksl"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 5, 4)
+
+[sub_resource type="Resource" id="Resource_5ucd5"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 5, 4)
+
+[sub_resource type="Resource" id="Resource_b8yi3"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 5, 4)
+
+[sub_resource type="Resource" id="Resource_ewqxs"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 5, 4)
+
+[sub_resource type="Resource" id="Resource_8uqad"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 4, 4)
+
+[sub_resource type="Resource" id="Resource_crij4"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 4, 4)
+
+[sub_resource type="Resource" id="Resource_4xq05"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 4, 4)
+
+[sub_resource type="Resource" id="Resource_ge4ro"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 4, 4)
+
+[sub_resource type="Resource" id="Resource_4vpeo"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 4, 4)
+
+[sub_resource type="Resource" id="Resource_mhk00"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 3, 4)
+
+[sub_resource type="Resource" id="Resource_wv4ad"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 3, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_ykqwj"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 3, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_gm03s"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 3, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_kt6ho"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 3, 4)
+
+[sub_resource type="Resource" id="Resource_svy3g"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 2, 4)
+
+[sub_resource type="Resource" id="Resource_m7ie7"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 2, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_d26rq"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 2, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_sirqt"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 2, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_qmtw8"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 2, 4)
+
+[sub_resource type="Resource" id="Resource_tui8c"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 1, 4)
+
+[sub_resource type="Resource" id="Resource_pi85b"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 1, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_fufjl"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 1, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_mlf8g"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 1, 4)
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_m2fmn"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 1, 4)
+
+[sub_resource type="Resource" id="Resource_fu3m4"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(0, 0, 4)
+
+[sub_resource type="Resource" id="Resource_gimdv"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(1, 0, 4)
+
+[sub_resource type="Resource" id="Resource_ys7gj"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(2, 0, 4)
+
+[sub_resource type="Resource" id="Resource_jou7r"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(3, 0, 4)
+
+[sub_resource type="Resource" id="Resource_6uc8n"]
+script = ExtResource("1_u82lp")
+pos = Vector3i(4, 0, 4)
 
 [resource]
 script = ExtResource("2_u82lp")
-width = 4
-height = 6
-layers = 4
-cells = Array[ExtResource("1_u82lp")]([SubResource("Resource_u82lp"), SubResource("Resource_84iw2"), SubResource("Resource_oac3y"), SubResource("Resource_dx2u0"), SubResource("Resource_uxv81"), SubResource("Resource_wdwxm"), SubResource("Resource_etqve"), SubResource("Resource_ftp57"), SubResource("Resource_1blew"), SubResource("Resource_qy0i3"), SubResource("Resource_kl48v"), SubResource("Resource_sn7qi"), SubResource("Resource_t37xc"), SubResource("Resource_thkhp"), SubResource("Resource_ncu7x"), SubResource("Resource_18sbb"), SubResource("Resource_3mqs0"), SubResource("Resource_64nv1"), SubResource("Resource_wftdi"), SubResource("Resource_5bpla"), SubResource("Resource_hjct8"), SubResource("Resource_m1reg"), SubResource("Resource_1oox0"), SubResource("Resource_0sabw"), SubResource("Resource_clx40"), SubResource("Resource_t85ri"), SubResource("Resource_v88wp"), SubResource("Resource_gaavi"), SubResource("Resource_r5rsg"), SubResource("Resource_l6s1k"), SubResource("Resource_mrtkv"), SubResource("Resource_1s6ft"), SubResource("Resource_dgerf"), SubResource("Resource_0j22w"), SubResource("Resource_ai7ve"), SubResource("Resource_rm4t7"), SubResource("Resource_tkn7t"), SubResource("Resource_mfq7h"), SubResource("Resource_6l65s"), SubResource("Resource_86au4"), SubResource("Resource_cvvr4"), SubResource("Resource_spnb5"), SubResource("Resource_jj8fy"), SubResource("Resource_1w5hq"), SubResource("Resource_k13pb"), SubResource("Resource_6ujad"), SubResource("Resource_22jkj"), SubResource("Resource_eba2i"), SubResource("Resource_skw8n"), SubResource("Resource_wye48"), SubResource("Resource_b2k0c"), SubResource("Resource_uclo0"), SubResource("Resource_24dan"), SubResource("Resource_qpgey"), SubResource("Resource_ebs4j"), SubResource("Resource_kf1xw"), SubResource("Resource_3b584"), SubResource("Resource_v8qjc"), SubResource("Resource_05uku"), SubResource("Resource_1wvmd"), SubResource("Resource_edcgm"), SubResource("Resource_dd8gg"), SubResource("Resource_gfjpp"), SubResource("Resource_6ba0k"), SubResource("Resource_k8n3p"), SubResource("Resource_sqyna"), SubResource("Resource_aaqhq"), SubResource("Resource_v4qu8"), SubResource("Resource_pu6qu"), SubResource("Resource_x1vxc"), SubResource("Resource_htntw"), SubResource("Resource_5qpb5"), SubResource("Resource_toj6l"), SubResource("Resource_ia00o"), SubResource("Resource_wghq6"), SubResource("Resource_fhtup"), SubResource("Resource_wv78n"), SubResource("Resource_q5log"), SubResource("Resource_ww7ge"), SubResource("Resource_brwo1"), SubResource("Resource_2luj3"), SubResource("Resource_63sdt"), SubResource("Resource_diy7r"), SubResource("Resource_1fmfj"), SubResource("Resource_gmeqb"), SubResource("Resource_lb1of"), SubResource("Resource_7qn8n"), SubResource("Resource_b3tpc"), SubResource("Resource_ntatt"), SubResource("Resource_rc06t"), SubResource("Resource_bsknk"), SubResource("Resource_tk143"), SubResource("Resource_mdjqt"), SubResource("Resource_cdnic"), SubResource("Resource_piu4e"), SubResource("Resource_r6yqv")])
+height = 7
+layers = 5
+cells = Array[ExtResource("1_u82lp")]([SubResource("Resource_u82lp"), SubResource("Resource_84iw2"), SubResource("Resource_oac3y"), SubResource("Resource_dx2u0"), SubResource("Resource_uxv81"), SubResource("Resource_wdwxm"), SubResource("Resource_etqve"), SubResource("Resource_ftp57"), SubResource("Resource_1blew"), SubResource("Resource_qy0i3"), SubResource("Resource_kl48v"), SubResource("Resource_sn7qi"), SubResource("Resource_t37xc"), SubResource("Resource_thkhp"), SubResource("Resource_ncu7x"), SubResource("Resource_18sbb"), SubResource("Resource_3mqs0"), SubResource("Resource_64nv1"), SubResource("Resource_wftdi"), SubResource("Resource_5bpla"), SubResource("Resource_hjct8"), SubResource("Resource_m1reg"), SubResource("Resource_1oox0"), SubResource("Resource_0sabw"), SubResource("Resource_clx40"), SubResource("Resource_t85ri"), SubResource("Resource_v88wp"), SubResource("Resource_gaavi"), SubResource("Resource_r5rsg"), SubResource("Resource_l6s1k"), SubResource("Resource_mrtkv"), SubResource("Resource_1s6ft"), SubResource("Resource_dgerf"), SubResource("Resource_0j22w"), SubResource("Resource_ai7ve"), SubResource("Resource_rm4t7"), SubResource("Resource_tkn7t"), SubResource("Resource_mfq7h"), SubResource("Resource_6l65s"), SubResource("Resource_86au4"), SubResource("Resource_cvvr4"), SubResource("Resource_spnb5"), SubResource("Resource_jj8fy"), SubResource("Resource_1w5hq"), SubResource("Resource_k13pb"), SubResource("Resource_6ujad"), SubResource("Resource_22jkj"), SubResource("Resource_eba2i"), SubResource("Resource_skw8n"), SubResource("Resource_wye48"), SubResource("Resource_b2k0c"), SubResource("Resource_uclo0"), SubResource("Resource_24dan"), SubResource("Resource_qpgey"), SubResource("Resource_ebs4j"), SubResource("Resource_kf1xw"), SubResource("Resource_3b584"), SubResource("Resource_v8qjc"), SubResource("Resource_05uku"), SubResource("Resource_1wvmd"), SubResource("Resource_edcgm"), SubResource("Resource_dd8gg"), SubResource("Resource_gfjpp"), SubResource("Resource_6ba0k"), SubResource("Resource_k8n3p"), SubResource("Resource_sqyna"), SubResource("Resource_aaqhq"), SubResource("Resource_v4qu8"), SubResource("Resource_pu6qu"), SubResource("Resource_x1vxc"), SubResource("Resource_htntw"), SubResource("Resource_5qpb5"), SubResource("Resource_toj6l"), SubResource("Resource_ia00o"), SubResource("Resource_wghq6"), SubResource("Resource_fhtup"), SubResource("Resource_wv78n"), SubResource("Resource_q5log"), SubResource("Resource_ww7ge"), SubResource("Resource_brwo1"), SubResource("Resource_2luj3"), SubResource("Resource_63sdt"), SubResource("Resource_diy7r"), SubResource("Resource_1fmfj"), SubResource("Resource_gmeqb"), SubResource("Resource_lb1of"), SubResource("Resource_7qn8n"), SubResource("Resource_b3tpc"), SubResource("Resource_ntatt"), SubResource("Resource_rc06t"), SubResource("Resource_bsknk"), SubResource("Resource_tk143"), SubResource("Resource_mdjqt"), SubResource("Resource_cdnic"), SubResource("Resource_piu4e"), SubResource("Resource_r6yqv"), SubResource("Resource_12gk5"), SubResource("Resource_l035q"), SubResource("Resource_2wcav"), SubResource("Resource_eh401"), SubResource("Resource_4aml3"), SubResource("Resource_ri1ua"), SubResource("Resource_edy8x"), SubResource("Resource_k7h7y"), SubResource("Resource_irgvr"), SubResource("Resource_c6s2u"), SubResource("Resource_y4rmv"), SubResource("Resource_hejjq"), SubResource("Resource_sgvdo"), SubResource("Resource_dmd8h"), SubResource("Resource_jjgq4"), SubResource("Resource_wjllk"), SubResource("Resource_mpkkw"), SubResource("Resource_tsfci"), SubResource("Resource_d8dmt"), SubResource("Resource_jyx6x"), SubResource("Resource_o22c3"), SubResource("Resource_d4pe5"), SubResource("Resource_drjfg"), SubResource("Resource_hb28b"), SubResource("Resource_726ss"), SubResource("Resource_60wrd"), SubResource("Resource_bto4r"), SubResource("Resource_omehb"), SubResource("Resource_0y7n2"), SubResource("Resource_hufct"), SubResource("Resource_6g36d"), SubResource("Resource_oedor"), SubResource("Resource_j3uqy"), SubResource("Resource_ujlnp"), SubResource("Resource_4c6ft"), SubResource("Resource_ogl46"), SubResource("Resource_lkjid"), SubResource("Resource_kj1lh"), SubResource("Resource_uhgqk"), SubResource("Resource_hl6t3"), SubResource("Resource_qymnk"), SubResource("Resource_15avo"), SubResource("Resource_efcuk"), SubResource("Resource_l4q6g"), SubResource("Resource_7r0h6"), SubResource("Resource_vxskb"), SubResource("Resource_wc6j8"), SubResource("Resource_oy5ls"), SubResource("Resource_1iifp"), SubResource("Resource_b6fjh"), SubResource("Resource_uwksl"), SubResource("Resource_5ucd5"), SubResource("Resource_b8yi3"), SubResource("Resource_ewqxs"), SubResource("Resource_8uqad"), SubResource("Resource_crij4"), SubResource("Resource_4xq05"), SubResource("Resource_ge4ro"), SubResource("Resource_4vpeo"), SubResource("Resource_mhk00"), SubResource("Resource_wv4ad"), SubResource("Resource_ykqwj"), SubResource("Resource_gm03s"), SubResource("Resource_kt6ho"), SubResource("Resource_svy3g"), SubResource("Resource_m7ie7"), SubResource("Resource_d26rq"), SubResource("Resource_sirqt"), SubResource("Resource_qmtw8"), SubResource("Resource_tui8c"), SubResource("Resource_pi85b"), SubResource("Resource_fufjl"), SubResource("Resource_mlf8g"), SubResource("Resource_m2fmn"), SubResource("Resource_fu3m4"), SubResource("Resource_gimdv"), SubResource("Resource_ys7gj"), SubResource("Resource_jou7r"), SubResource("Resource_6uc8n")])
 metadata/_custom_type_script = "uid://cn1q7283gtg1i"

@@ -1,6 +1,17 @@
 [gd_scene format=3 uid="uid://dhokrh237pchr"]
 
-[ext_resource type="Script" uid="uid://c23v5ojrfukeg" path="res://src/core/builder.gd" id="1_irdgk"]
+[ext_resource type="Script" uid="uid://c33l5gs42tuav" path="res://tests/apple/apple.gd" id="1_irdgk"]
+[ext_resource type="Resource" uid="uid://c6dnh5xa7pfup" path="res://tests/apple/apple.tres" id="2_jfl4v"]
 
-[node name="Apple" type="Node3D" unique_id=170533529]
+[node name="MainNode" type="Node3D" unique_id=170533529]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=171393850]
+
+[node name="Apple" type="Node3D" parent="." unique_id=2023765988]
+transform = Transform3D(0.215, 0, 0, 0, 0.215, 0, 0, 0, 0.215, 0.55, 0.1, -1.295)
 script = ExtResource("1_irdgk")
+model = ExtResource("2_jfl4v")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=244848024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, -0.344, -4.852)
+visible = false
