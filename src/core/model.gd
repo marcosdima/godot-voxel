@@ -27,8 +27,8 @@ func get_mesh() -> ArrayMesh:
 
 
 ## Converts voxel entries into a dictionary for fast lookup.
-func _to_dict() -> Dictionary:
-	var d := {}
+func _to_dict() -> Dictionary[Vector3i, Color]:
+	var d: Dictionary[Vector3i, Color] = {} 
 
 	for e in cells:
 		# Check for duplicate positions to avoid overwriting colors.
