@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dgqotmxykhdn8"]
 
 [ext_resource type="Script" uid="uid://8ja6ooo42muv" path="res://src/editor/editor.gd" id="1_2qsb6"]
-[ext_resource type="Resource" uid="uid://c6dnh5xa7pfup" path="res://tests/apple/apple.tres" id="2_8bp7q"]
+[ext_resource type="Resource" path="res://tests/apple/apple.tres" id="2_8bp7q"]
 [ext_resource type="Script" uid="uid://habkusgi3k0e" path="res://src/editor/components/layer_picker.gd" id="3_8bp7q"]
 
 [node name="Editor" type="VBoxContainer" unique_id=223647604 node_paths=PackedStringArray("grid", "current_layer", "save_button", "copy_button", "paste_button")]
