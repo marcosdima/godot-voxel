@@ -1,0 +1,231 @@
+[gd_resource type="Resource" script_class="VoxelModel" format=3]
+
+[ext_resource type="Script" path="res://src/core/voxel.gd" id="1_o2pay"]
+[ext_resource type="Script" path="res://src/core/model.gd" id="2_s5abt"]
+
+[sub_resource type="Resource" id="Resource_o2pay"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 7, 0)
+
+[sub_resource type="Resource" id="Resource_s5abt"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 7, 0)
+
+[sub_resource type="Resource" id="Resource_fhutl"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 7, 0)
+color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_f1abh"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 6, 0)
+
+[sub_resource type="Resource" id="Resource_cc157"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 6, 0)
+color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_4dgxe"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 6, 0)
+
+[sub_resource type="Resource" id="Resource_n0dmc"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 5, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_y1mgt"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 5, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_xaydq"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 5, 0)
+
+[sub_resource type="Resource" id="Resource_3w3cs"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 4, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_cxq5k"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 4, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_qgxco"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 4, 0)
+
+[sub_resource type="Resource" id="Resource_hwxqr"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 3, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_yhx4r"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 3, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_lqva8"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 3, 0)
+
+[sub_resource type="Resource" id="Resource_qg5r8"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 2, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_e7k4d"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 2, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_syg0o"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 2, 0)
+
+[sub_resource type="Resource" id="Resource_2a58i"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 1, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_x4nsv"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 1, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_2kcog"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 1, 0)
+
+[sub_resource type="Resource" id="Resource_exg6n"]
+script = ExtResource("1_o2pay")
+
+[sub_resource type="Resource" id="Resource_d3hol"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 0, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_c7y4v"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 0, 0)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_qrt2w"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 7, 1)
+
+[sub_resource type="Resource" id="Resource_auv4s"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 7, 1)
+
+[sub_resource type="Resource" id="Resource_uhthy"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 7, 1)
+color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_ywa5c"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 6, 1)
+
+[sub_resource type="Resource" id="Resource_bw6sw"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 6, 1)
+color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_41atr"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 6, 1)
+
+[sub_resource type="Resource" id="Resource_scw6g"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 5, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_e4qp4"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 5, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_ccm6y"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 5, 1)
+
+[sub_resource type="Resource" id="Resource_1ktfn"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 4, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_4bcdc"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 4, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_7w1l1"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 4, 1)
+
+[sub_resource type="Resource" id="Resource_box5j"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 3, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_ffrqy"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 3, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_vptfd"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 3, 1)
+
+[sub_resource type="Resource" id="Resource_46tov"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 2, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_y1b8r"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 2, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_noxxc"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 2, 1)
+
+[sub_resource type="Resource" id="Resource_0hpsm"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 1, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_lpq4t"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 1, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_fiesl"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 1, 1)
+
+[sub_resource type="Resource" id="Resource_2j0ee"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_4jsj7"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(1, 0, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[sub_resource type="Resource" id="Resource_wusks"]
+script = ExtResource("1_o2pay")
+pos = Vector3i(2, 0, 1)
+color = Color(1, 0.9843137, 0, 1)
+
+[resource]
+script = ExtResource("2_s5abt")
+width = 3
+height = 8
+layers = 2
+cells = Array[ExtResource("1_o2pay")]([SubResource("Resource_o2pay"), SubResource("Resource_s5abt"), SubResource("Resource_fhutl"), SubResource("Resource_f1abh"), SubResource("Resource_cc157"), SubResource("Resource_4dgxe"), SubResource("Resource_n0dmc"), SubResource("Resource_y1mgt"), SubResource("Resource_xaydq"), SubResource("Resource_3w3cs"), SubResource("Resource_cxq5k"), SubResource("Resource_qgxco"), SubResource("Resource_hwxqr"), SubResource("Resource_yhx4r"), SubResource("Resource_lqva8"), SubResource("Resource_qg5r8"), SubResource("Resource_e7k4d"), SubResource("Resource_syg0o"), SubResource("Resource_2a58i"), SubResource("Resource_x4nsv"), SubResource("Resource_2kcog"), SubResource("Resource_exg6n"), SubResource("Resource_d3hol"), SubResource("Resource_c7y4v"), SubResource("Resource_qrt2w"), SubResource("Resource_auv4s"), SubResource("Resource_uhthy"), SubResource("Resource_ywa5c"), SubResource("Resource_bw6sw"), SubResource("Resource_41atr"), SubResource("Resource_scw6g"), SubResource("Resource_e4qp4"), SubResource("Resource_ccm6y"), SubResource("Resource_1ktfn"), SubResource("Resource_4bcdc"), SubResource("Resource_7w1l1"), SubResource("Resource_box5j"), SubResource("Resource_ffrqy"), SubResource("Resource_vptfd"), SubResource("Resource_46tov"), SubResource("Resource_y1b8r"), SubResource("Resource_noxxc"), SubResource("Resource_0hpsm"), SubResource("Resource_lpq4t"), SubResource("Resource_fiesl"), SubResource("Resource_2j0ee"), SubResource("Resource_4jsj7"), SubResource("Resource_wusks")])
+metadata/_custom_type_script = "uid://cn1q7283gtg1i"

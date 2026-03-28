@@ -11,9 +11,8 @@ func _ready():
 	if model == null:
 		push_error("No VoxelModel assigned")
 		return
-
-	var mesh = model.get_mesh()
 	
+	var mesh = model.get_mesh()
 	var mesh_instance = MeshInstance3D.new()
 	mesh_instance.mesh = mesh
 	add_child(mesh_instance)
@@ -45,7 +44,14 @@ func _process(delta):
 		input_dir.z -= 1
 	if Input.is_key_pressed(KEY_S):
 		input_dir.z += 1
-	
+
+	# Vertical movement: Space (up), Shift (down)
+	if Input.is_key_pressed(KEY_SPACE):
+		input_dir.y += 1
+	if Input.is_key_pressed(KEY_SHIFT):
+		input_dir.y -= 1
+
+	# Normalize input direction and moves the camera.
 	if input_dir.length() > 0:
 		input_dir = input_dir.normalized()
 		var move_vec = camera.global_transform.basis * (input_dir * move_speed * delta)
